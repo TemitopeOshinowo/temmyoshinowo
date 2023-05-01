@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Landing Page</title>
+    <style>
+      body {
+        background-color: rgb(88, 13, 8);
+        background-image: linear-gradient(to top, #700404 100%, #0c0707 90%);
+      }
+      h1 {
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        text-align: center;
+        display: block;
+        width: 50%;
+        padding: 1px;
+        margin: 5px auto;
+        font-weight: bolder;
+        margin-top: 10px;
+      }
+      h2 {
+        color: rgb(255, 255, 255);
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+        text-align: center;
+        font-size: 30px;
+        width: 50%;
+        font-weight: bolder;
+        margin: 2px auto;
+        border: 1px solid #ffff;
+        border-radius: 10px;
+        line-height: 200%;
+      }
+      img {
+        float: left;
+        display: block;
+        padding: 2px;
+        border: solid black 1px;
+        border-radius: 10px;
+        max-width: 100%;
+        width: 400px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        line-height: 1.5;
+        color: azure;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+        margin: 20px 0 20px;
+        font-size: 18px;
+      }
+      button {
+        padding: 1.3em 3em;
+        font-size: 20px;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: black;
+        background: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 5px 5px 10px #7e2013;
+        transition: 0.3s ease;
+        cursor: pointer;
+        text-align: center;
+        background-color: #7e2013;
+        padding: 10px 10px;
+        margin: 0 auto;
+        margin-top: 2em;
+        display: block;
+      }
+
+      button:hover {
+        background-color: black;
+        text-transform: uppercase;
+        color: white;
+        box-shadow: 5px 5px 10px #240905;
+        transform: translateY(-7px);
+        cursor: pointer;
+      }
+      button:active {
+        transform: translateY(-1px);
+      }
+      .coder {
+        text-align: center;
+        letter-spacing: 2.5px;
+        margin-top: 1em;
+      }
+      .a {
+        text-align: right;
+        font-size: 20px;
+      }
+      a:visited {
+        color: white;
+      }
+      a:hover {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BUILD YOUR DREAM BODY</h1>
+    <br />
+    <h2>Consistency and Determination</h2>
+    <hr />
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/529/original/pexels-cottonbro-studio-4752861.jpg?1679200333"
+      alt="Fitness Goal"
+    />
+
+    <p>
+      <br />
+      Achieving your ideal body shape is no easy feat, and the journey to
+      feeling healthy and comfortable in your own skin is different for
+      everyone.
+    </p>
+    <p>
+      It’s important to find sources of nutrition that will provide you with
+      enough energy to get through your workout sessions and/or daily activities
+      while also giving you the vitamins and minerals needed for overall health.
+    </p>
+    <p>
+      Exercise is an important part of achieving the body shape you desire.
+      Regular physical activity can help to build muscle, improve your hormones,
+      boost metabolism, reduce fat and create a leaner, healthier
+      physique.Getting enough quality sleep helps to restore your energy, helps
+      to control your appetite, and can regulate hormone levels that can have
+      beneficial impacts on weight loss goal.
+    </p>
+    <br />
+    <br />
+    <span class="a">
+      <a
+        href="https://fashionsizzle.com/2023/03/13/how-to-achieve-your-ideal-body-shape-7-steps-to-follow/"
+        target="_blank"
+        ><strong>More Information</strong></a
+      >
+    </span>
+
+    <button><em>Choose Fitness😃</em></button>
+    <div class="coder">
+      <strong> This Page was built by Temitope Oshinowo</strong>
+    </div>
+
+    <script>
+      function choose() {
+        let firstname = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        let workout = prompt("Do you workout often?");
+        if (workout === "yes") {
+          alert("😃");
+        } else {
+          alert("😠");
+        }
+        let fitness = prompt("How often do you work out weekly?");
+        if (fitness >= "3") {
+          alert("Weldone for consistency, " + firstname + "!, Keep it up.");
+        } else {
+          if (fitness < "3")
+            alert(
+              "We can help you get moltivated, " +
+                firstname +
+                "!, Keep it up still."
+            );
+        }
+      }
+
+      let chooseButton = document.querySelector("button");
+      chooseButton.addEventListener("click", choose);
+    </script>
+  </body>
+</html>
